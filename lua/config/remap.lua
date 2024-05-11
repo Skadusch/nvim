@@ -1,5 +1,4 @@
 local map = vim.keymap.set
-map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<leader><leader>x", "<cmd>source %<cr>")
 
 map("i", "jk", "<ESC>")
