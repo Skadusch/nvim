@@ -5,6 +5,15 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 	pattern = { "*.xaml" },
 	command = ":set filetype=xml",
 })
+-- highlight yanked text
+vim.api.nvim_create_autocmd("TextYankPost", {
+	group = vim.api.nvim_create_augroup("highlight_yank", {}),
+	desc = "Hightlight selection on yank",
+	pattern = "*",
+	callback = function()
+		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 150 })
+	end,
+})
 
 vim.opt.guicursor = "a:block"
 vim.opt.nu = true
@@ -22,6 +31,11 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = "~\\.vim\\undodir"
+vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
