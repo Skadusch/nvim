@@ -12,7 +12,7 @@ Made in Windows. 😭
 
 "Neovim IDE with Lazy Plugin Manager."
 
-Sets filetype xaml to xaml.
+Sets filetype xaml to xml.
 
 **Undos for days.**
 
