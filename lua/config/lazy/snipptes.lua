@@ -1,6 +1,6 @@
 return {
 	"L3MON4D3/LuaSnip",
-	event = { "InsertEnter" },
+	event = { "BufReadPre" },
 	version = "v2.*",
 	dependencies = {
 		"rafamadriz/friendly-snippets",
