@@ -8,10 +8,9 @@ return {
 	},
 	config = function()
 		local ls = require("luasnip")
+		require("luasnip.loaders.from_vscode").load()
+		-- somehow vscode snippets get loaded 8 times in html?
 
-		--[[ vim.keymap.set({ "i" }, "<C-K>", function()
-			ls.expand()
-		end, { silent = true }) ]]
 		vim.keymap.set({ "i", "s" }, "<C-k>", function()
 			ls.jump(1)
 		end, { silent = true })
@@ -23,6 +22,5 @@ return {
 				ls.change_choice(1)
 			end
 		end, { silent = true })
-		require("luasnip.loaders.from_vscode").load()
 	end,
 }

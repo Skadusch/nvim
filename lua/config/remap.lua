@@ -5,6 +5,9 @@ map("i", "jk", "<ESC>")
 
 map("n", "<leader>pv", ":Ex<cr>")
 
+map("n", "<leader>hs", "<cmd>sp<cr>")
+map("n", "<leader>vs", "<cmd>vsp<cr>")
+
 -- Markieten Text verschieben
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
