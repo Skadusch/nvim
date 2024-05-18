@@ -17,11 +17,12 @@ Sets filetype xaml to xaml.
 **Undos for days.**
 
 Just set a directory in options.lua under:
+This places the undofiles in $XDG_CONFIG_HOME/nvim/path. On Windows for this example the path is "\\AppData\\Local\\nvim\\.vim\\undodir"
 
 ```
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "/path/to/folder"
+vim.opt.undodir = ".vim\\undodir"
 vim.opt.undofile = true
 ```
 
