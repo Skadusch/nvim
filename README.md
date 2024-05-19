@@ -22,11 +22,11 @@ Just set a directory in options.lua under:
 ```
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = ".vim\\undodir"
+vim.opt.undodir = ".vim/undodir"
 vim.opt.undofile = true
 ```
 
-This places the undofiles in $XDG_CONFIG_HOME/nvim/path. On Windows for this example the path is "\\AppData\\Local\\nvim\\.vim\\undodir"
+This creates a directory in you current path to store the undofiles.
 
 ## Links:
 
