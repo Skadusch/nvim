@@ -1,8 +1,6 @@
 # Neovim Config
 
-More or less a Backup, no warranty that it works.
-
-Made in Windows. 😭
+Backup for my Windows Neovim
 
 **Requires:** (need to check, not really sure)
 
